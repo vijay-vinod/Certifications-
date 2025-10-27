@@ -1,6 +1,6 @@
 excel sheet = https://mysait-my.sharepoint.com/:x:/r/personal/vijay_vinod_edu_sait_ca/Documents/table_to_determine_subnets.xlsx?d=w0c2a6763aaed460c973b2d4ef55090d7&csf=1&web=1&e=ycCoYK
 
-| Cidr | Subnet value | Bits |
+| Cidr | Subnet value | Bits (block size) |
 |:------|:-------------:|:-------------:|
 | /32 | 255 | 1  |
 | /31 | 254 | 2  | 
