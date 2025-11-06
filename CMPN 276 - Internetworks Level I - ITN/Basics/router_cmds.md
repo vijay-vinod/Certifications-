@@ -81,3 +81,13 @@ R1(config-line)# exit
 
 R1(config)# login block-for 180 attempts 4 within 120                                   #Block anyone for three minutes who fails to log in after four attempts within a two-minute period.
 
+R1(config)#username Admin1 privilege 15 secret Admin1pa55                  # CREATE USER AND SET PASSWORD
+
+
+
+
+
+
+
+ALL CCNA CMDS = https://community.cisco.com/t5/networking-knowledge-base/ccna-command-summary/ta-p/4041776
+
