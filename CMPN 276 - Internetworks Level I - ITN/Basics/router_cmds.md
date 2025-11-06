@@ -61,3 +61,23 @@ R1(config-if)# ipv6 address fe80::1 link-local       #Configure the link-local I
 R1# show ipv6 interface brief                        # Verify the addressing configured
 
 R1(config-if)# no ipv6 address 2001:db8:1:5::1/64     #remove the incorrect address
+
+
+R1(config)# no ip domain-lookup                   #stop dns lookup
+
+R1(config)# security passwords min-length 10           #  Require that a minimum of 10 characters be used for all passwords.
+
+R1(config)# ip domain-name CCNA-lab.com              # Set the domain name to CCNA-lab.com
+
+R1(config)# crypto key generate rsa                          #Generate a 1024-bit RSA key.
+How many bits in the modulus [512]: 1024            
+
+R1(config)# line vty 0 4                                       #   Configure the VTY lines for SSH access.
+R1(config-line)# transport input ssh
+R1(config-line)# login local
+
+R1(config-line)# exec-timeout 5 0                                 #  Configure the console and VTY lines to log out after five minutes of inactivity.
+R1(config-line)# exit
+
+R1(config)# login block-for 180 attempts 4 within 120                                   #Block anyone for three minutes who fails to log in after four attempts within a two-minute period.
+
